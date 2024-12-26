@@ -338,7 +338,7 @@ Transform:
   m_GameObject: {fileID: 550090907}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: -4.14, z: -1}
+  m_LocalPosition: {x: -0.04, y: -3.99, z: -1}
   m_LocalScale: {x: 21.324377, y: 1.7565681, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -483,6 +483,57 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &777029337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777029339}
+  - component: {fileID: 777029338}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &777029338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777029337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd87f9687fcd324c8100a805c13775a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildings:
+  - {fileID: 7618686157764787246, guid: 73652b9338d368c428303b7e90b0b5af, type: 3}
+  - {fileID: 7618686157764787246, guid: 8060fafdb0b83f84ebf574704a36d9e7, type: 3}
+  - {fileID: 7618686157764787246, guid: 3b3651edc6caab24b9e76e39fcdea830, type: 3}
+  - {fileID: 7618686157764787246, guid: d867e52767312284b9915af217e2e961, type: 3}
+  - {fileID: 7618686157764787246, guid: 2ee7c3e85d126f5459e5381a3dfb2062, type: 3}
+  randomDevitation: 0.5
+--- !u!4 &777029339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777029337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.67, y: -3.79, z: -0.073084764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -670,7 +721,7 @@ Transform:
   m_GameObject: {fileID: 1417173577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.08, y: -1.41, z: 0}
+  m_LocalPosition: {x: -0.08, y: -1.61, z: 0}
   m_LocalScale: {x: 21.324377, y: 4.621331, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -701,9 +752,9 @@ GameObject:
   - component: {fileID: 1984467810}
   - component: {fileID: 1984467809}
   - component: {fileID: 1984467808}
-  - component: {fileID: 1984467813}
   - component: {fileID: 1984467812}
   - component: {fileID: 1984467811}
+  - component: {fileID: 1984467813}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -721,7 +772,7 @@ Animator:
   m_GameObject: {fileID: 1984467807}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 832c88a3bf840194d9e32f5088cb0546, type: 2}
+  m_Controller: {fileID: 9100000, guid: 42cce0fca5a09c84aaf4ca9d4eac7191, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -797,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 1984467807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.878379, y: -2.3513513, z: 0}
+  m_LocalPosition: {x: -8.878379, y: -2.3513513, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -815,8 +866,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f708dcabd15d04419c255175dc44e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 14
   playerRigidbody2D: {fileID: 0}
+  playerAnimator: {fileID: 0}
   isGrounded: 1
 --- !u!61 &1984467812
 BoxCollider2D:
@@ -901,3 +953,4 @@ SceneRoots:
   - {fileID: 1417173581}
   - {fileID: 550090911}
   - {fileID: 1984467810}
+  - {fileID: 777029339}
